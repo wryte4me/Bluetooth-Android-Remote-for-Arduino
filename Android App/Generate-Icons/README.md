@@ -1,14 +1,11 @@
 # Powerpoint to PNG Exporter
 ---
 
-## README: PowerPoint Slide Exporter Script
-
-### Purpose
 This VBScript (`export_ppt_to_png.vbs`) exports each slide from a PowerPoint presentation as a PNG image. The exported images will be named according to a predefined list of filenames and saved in an automatically created "Icons" folder within the same directory where the script is located.
 
 ---
 
-### How to Use the Script
+## How to Use the Script
 
 1. **Ensure PowerPoint is Installed**:
    This script requires Microsoft PowerPoint to be installed on your system. The script will not work without it.
@@ -26,9 +23,9 @@ This VBScript (`export_ppt_to_png.vbs`) exports each slide from a PowerPoint pre
 
 ---
 
-### Modifying the Script
+## Modifying the Script
 
-#### Changing the PowerPoint File Location and Name
+### Changing the PowerPoint File Location and Name
 
 By default, the script is configured to look for a PowerPoint file in the same directory as the script. The script automatically detects the location of the folder it is run from, so no changes are needed if the `.pptx` file is placed in the same folder.
 
@@ -40,7 +37,7 @@ pptFilePath = scriptPath & "\AndroidBluetoothController.pptx"
 
 Replace `"AndroidBluetoothController.pptx"` with the filename of your PowerPoint file, ensuring you provide the full path if the file is located elsewhere.
 
-#### Changing the Output Filenames for the Slides
+### Changing the Output Filenames for the Slides
 
 The script exports slides as PNG images using predefined filenames stored in an array. You can modify these filenames to suit your needs.
 
@@ -56,13 +53,13 @@ For example, to change the first filename from `arrowUp` to `forwardArrow`, modi
 fileNames = Array("forwardArrow", "arrowDown", "arrowLeft", "arrowRight", "tool", "manualMode", "autoMode")
 ```
 
-#### Important: Matching the Number of Filenames and Slides
+### Important: Matching the Number of Filenames and Slides
 
 It is **essential** that the number of filenames in the `fileNames` array matches the number of slides in the PowerPoint presentation. If there are more or fewer slides than filenames, the script will display an error and exit. You must either add or remove filenames from the array to ensure the count is correct.
 
 ---
 
-### Important Notes
+## Important Notes
 
 1. **Order of Filenames and Slides**:
    The filenames in the array correspond to the order of the slides in the PowerPoint presentation. The first filename in the array will be used for the first slide, the second for the second slide, and so on. This order is important, so make sure that the filenames match the intended content of the slides.
@@ -81,7 +78,7 @@ It is **essential** that the number of filenames in the `fileNames` array matche
 
 ---
 
-### Troubleshooting
+## Troubleshooting
 
 - If the script fails to run, ensure that PowerPoint is properly installed on your machine.
 - Make sure that the PowerPoint file is located in the same directory as the script (or update the path in the script as explained above).
@@ -90,7 +87,7 @@ It is **essential** that the number of filenames in the `fileNames` array matche
 
 ---
 
-### Example Setup
+## Example Setup
 
 - **PowerPoint File**: `AndroidBluetoothController.pptx` in the same directory as `export_ppt_to_png.vbs`.
 - **Icons Folder**: Automatically created in the same directory to store exported PNG images.
@@ -98,7 +95,7 @@ It is **essential** that the number of filenames in the `fileNames` array matche
 
 ---
 
-### License and Credits
+## License and Credits
 
 This script was written to simplify the export of PowerPoint slides as PNG images. Feel free to modify and use it in your projects.
 
