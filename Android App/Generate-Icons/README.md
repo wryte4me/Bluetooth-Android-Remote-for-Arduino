@@ -1,5 +1,4 @@
-Here's a sample `README.txt` file that explains how to use the script, modify the filenames, and addresses other key points such as the importance of the order of filenames and slides, as well as the location of the PowerPoint file:
-
+# Powerpoint to PNG Exporter
 ---
 
 ## README: PowerPoint Slide Exporter Script
@@ -104,5 +103,3 @@ It is **essential** that the number of filenames in the `fileNames` array matche
 This script was written to simplify the export of PowerPoint slides as PNG images. Feel free to modify and use it in your projects.
 
 ---
-
-This `README.txt` provides a clear guide on how to use and modify the script, including details on changing filenames, understanding the importance of the order of filenames and slides, and how to adjust the PowerPoint file location.
