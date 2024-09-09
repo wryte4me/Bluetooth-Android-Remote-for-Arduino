@@ -1,7 +1,3 @@
-Here’s the modified README file based on your specifications:
-
----
-
 # ANDROID REMOTE (PLATFORM IO - ROBOT CODE)
 
 ## Overview
