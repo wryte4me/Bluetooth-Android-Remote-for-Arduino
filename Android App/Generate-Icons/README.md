@@ -11,6 +11,8 @@ This VBS script exports PowerPoint slides as PNG images with predefined names an
 - Ensure that both the script (`exportIcons.vbs`) and the PowerPoint file (`AndroidBluetoothController.pptx`) are located in the same folder.
 - The PowerPoint file should contain the slides you want to export as icons.
 
+---
+
 ### 2. Editing the PowerPoint File
 - Replace each slide in the PowerPoint file with the desired icon design while **keeping the same number of slides**.
 - The icon filenames that will be generated **cannot be changed**, so ensure the content of each slide corresponds to the correct icon based on the list below.
@@ -62,21 +64,21 @@ Icons/
 ### 6. Customization
 If you want to customize the script, here's what you can do:
 
-#### Change the Output Filenames
+1. Change the Output Filenames
 You can modify the fileNames array to specify different filenames for the slides. Update the array with your desired filenames as shown below:
 ```vb
 ' Define the filenames for each slide
 fileNames = Array("newIconName1", "newIconName2", "newIconName3", "newIconName4", "newIconName5", "newIconName6", "newIconName7", "newIconName8")
 ```
 Make sure the number of filenames corresponds to the number of slides in the presentation.
-#### 2. **Change the Image Dimensions**
-You can adjust the size of the exported PNG files by changing the width and height values in the script. The current default size is `1024x1024` pixels.
+2. **Change the Image Dimensions**
+You can also adjust the size of the exported PNG files by changing the width and height values in the script. The current default size is `1024x1024` pixels.
 
 ```vb
 ' Export the slide as a PNG file with custom size (width, height)
-pptPresentation.Slides(i).Export slidePath, "PNG", 800, 800
+pptPresentation.Slides(i).Export slidePath, "PNG", 1024, 1024
 ```
 
-Replace `800, 800` with the desired dimensions.
+Replace `1024, 1024` with the desired dimensions.
 
 ---
