@@ -9,27 +9,16 @@ This repository contains a project for controlling a robot via Bluetooth command
 
 ## Directory Structure
 
-- **Android App**: Contains files related to the mobile app developed using MIT App Inventor 2.
-  - **/Generate-Icons**: Resources and instructions for generating custom icons for the Android app.
-  - **/Build Android App**: Instructions for building and modifying the Android app.
-
-- **Platform IO**: Includes Platform IO files for firmware development.
-  - **platformio.ini**: Configuration file for Platform IO.
-  - **src/**: Source code for the robot's firmware.
+Directory tree (help on navigating the folders)
 
 ## Modifying the Project
 
 ### Android App
 
 #### Customizing Icons
-
-1. **Prepare Icons**:
-   - Refer to the [Generate-Icons README](Android%20App/Generate-Icons) for instructions on how to create and prepare custom icons for the app buttons.
-
-2. **Upload Icons**:
-   - Open MIT App Inventor 2.
-   - Go to **Media** in the project.
-   - Upload your custom icons by clicking **Upload File**. Ensure that you overwrite any existing files with the same name to update the app's design.
+1. Open Icon Generator.pptx and replace icons. Proper order is important because the filename that will be generated in the next step is based on the order provided in the script. Make sure no extra slides in the presentation.
+Save the file and close powerpoint.
+2. In the Windows File Explorer, click the ```IconBuilder.vbs``` script. This will automatically generate png file icons that will be used in modifying the Android App buttons.
 
 #### Building the App
 
@@ -43,6 +32,13 @@ This repository contains a project for controlling a robot via Bluetooth command
    - Click on **Build** > **App (provide QR code for .apk)** to compile the app. Scan the QR code with MIT AI2 Companion to test the app on an Android device.
 
 ### Platform IO
+
+#### Prerequisite 
+1. PlatformIO IDE Extension
+   - if not yet installed refer to this [How to setup PlatformIO IDE on VS Code](github.com/wryte4me/how-to-setup-platformio-ide-on-vs-code) guide to install.
+2. USB to TTL Drivers 
+   - refer to this [How to install Arduino Board drivers](github.com/wryte4me/how-to-install-arduino-board-drivers) guide to ensure that your Arduino boards can be detected by your device.
+
 
 #### Configuring Firmware
 
